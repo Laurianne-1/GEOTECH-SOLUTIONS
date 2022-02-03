@@ -1,0 +1,593 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #221E1F;
+  margin: 0px;
+  font-size: 1.2rem;
+}
+
+section {
+  width: 1200px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "barlow";
+  src: url("../fonts/barlow-regular.eot");
+  src: url("../fonts/barlow-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regular.ttf") format("truetype"), url("../fonts/barlow-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "barlowitalic";
+  src: url("../fonts/barlow-regularitalic.eot");
+  src: url("../fonts/barlow-regularitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-regularitalic.ttf") format("truetype"), url("../fonts/barlow-regularitalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "barlowbold";
+  src: url("../fonts/barlow-bold.eot");
+  src: url("../fonts/barlow-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bold.ttf") format("truetype"), url("../fonts/barlow-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "barlowbolditalic";
+  src: url("../fonts/barlow-bolditalic.eot");
+  src: url("../fonts/barlow-bolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-bolditalic.ttf") format("truetype"), url("../fonts/barlow-bolditalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "barlowlight";
+  src: url("../fonts/barlow-extralight.eot");
+  src: url("../fonts/barlow-extralight.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-extralight.ttf") format("truetype"), url("../fonts/barlow-extralight.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "barlowlightitalic";
+  src: url("../fonts/barlow-extralightitalic.eot");
+  src: url("../fonts/barlow-extralightitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/barlow-extralightitalic.ttf") format("truetype"), url("../fonts/barlow-extralightitalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/oswald.eot");
+  src: url("../fonts/oswald.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald.ttf") format("truetype"), url("../fonts/oswald.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "barlowlight", sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 175%;
+}
+
+h1 {
+  font-family: "oswald", sans-serif;
+  color: #BB5507;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: expanded;
+  line-height: 200%;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: "barlowbold", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  font-stretch: expanded;
+  line-height: 120%;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: "oswald", sans-serif;
+  color: #BB5507;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: expanded;
+  line-height: 120%;
+}
+
+li {
+  font-family: "barlow", sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 150%;
+}
+
+a {
+  font-family: "barlow", sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 175%;
+  text-decoration: none;
+}
+
+p {
+  font-family: "barlow", sans-serif;
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 175%;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banniere__slogan {
+  font-family: "barlowlightitalic", sans-serif;
+  color: white;
+  font-size: 32px;
+  font-weight: lighter;
+  line-height: 175%;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #221E1F;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  padding: 10px 0px 0px 20px;
+}
+.header__logo img {
+  width: 250px;
+}
+.header__menu {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+}
+.header__menu ul {
+  padding-right: 30px;
+  flex: 1;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header__menu ul li {
+  padding: 5px;
+  margin-left: 20px;
+  text-align: center;
+}
+.header__menu ul li:hover {
+  border-bottom: 3px solid #BB5507;
+}
+
+.nav {
+  padding-right: 6rem;
+  flex: 2 1 auto;
+  text-align: right;
+}
+.nav__link {
+  display: inline;
+  font-size: 3rem;
+  padding-left: 1.5rem;
+}
+.nav__link a {
+  text-decoration: none;
+  color: #463E40;
+}
+.nav__link--active {
+  color: #FFD600;
+}
+.nav__link--active:hover {
+  cursor: default;
+  color: #FFD600;
+}
+.nav__link a:hover {
+  color: white;
+}
+
+.form {
+  width: 100%;
+}
+.form__heading {
+  width: 100%;
+  color: white;
+  background: #BB5507;
+  line-height: 5rem;
+}
+.form__field label {
+  color: #463E40;
+  display: block;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.form__field input {
+  width: 100%;
+  background: #FFD600;
+  color: #463E40;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.75rem;
+  background-color: #FFD600;
+  color: #BB5507;
+}
+.form__field textarea {
+  width: 100%;
+  color: #BB5507;
+  background: #FFD600;
+  outline: none;
+}
+
+footer {
+  background: #463E40;
+  margin-top: 50px;
+  padding: 30px 50px;
+  display: flex;
+}
+footer h3 {
+  color: #221E1F;
+  margin: 0 0 20px 0;
+}
+footer p {
+  color: #221E1F;
+  font-size: 18px;
+}
+footer div {
+  flex: 1;
+}
+footer .reseaux img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.partenaires, .reseaux, .contactez {
+  padding: 0 30px;
+  flex: 1;
+}
+
+.partenaires__logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.partenaires__logos img {
+  height: 60px;
+}
+
+.banniere {
+  margin-top: 90px;
+  background: linear-gradient(rgba(34, 30, 31, 0.7), rgba(34, 30, 31, 0.7)), url("../images/chantier1.jpeg");
+  z-index: -1;
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.banniere__slogan {
+  max-width: 1000px;
+  padding: 0px 40px 0px 40px;
+  text-align: center;
+}
+.banniere__mission {
+  font-family: "barlow";
+  max-width: 1000px;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 80px 40px 0px 40px;
+  text-align: center;
+  line-height: 175%;
+}
+.banniere__CTA {
+  max-width: 1000px;
+  font-size: 1.2rem;
+  padding: 20px 50px;
+}
+
+.button {
+  background-color: rgba(70, 62, 64, 0.5);
+  color: #FFD600;
+  font-weight: bold;
+  text-align: center;
+  height: 100px;
+  line-height: 95px;
+  width: 200px;
+  border-radius: 50px;
+  border: 3px solid #FFD600;
+  transform: scale(1);
+  transition: all 200ms;
+}
+.button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 214, 0, 0.5);
+  color: white;
+}
+
+.trait {
+  border-top: 3px solid #BB5507;
+  margin-bottom: 48px;
+}
+
+.textd {
+  display: flex;
+  align-items: stretch;
+}
+.textd div {
+  border-bottom: 15px solid #221E1F;
+}
+.textd__text {
+  background: linear-gradient(rgba(34, 30, 31, 0.8), rgba(34, 30, 31, 0.8)), url("../images/roche5.jpeg");
+  background-size: cover;
+  flex: 1;
+  padding: 24px 48px;
+  transition: all 800ms;
+}
+.textd__text h2 {
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 800ms;
+}
+.textd__text p {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 800ms;
+}
+
+.textg {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: stretch;
+}
+.textg div {
+  border-bottom: 15px solid #221E1F;
+}
+.textg__text {
+  background: linear-gradient(rgba(34, 30, 31, 0.8), rgba(34, 30, 31, 0.8)), url("../images/roche1.jpeg");
+  background-size: cover;
+  flex: 1;
+  padding: 24px 48px;
+  transition: all 800ms;
+}
+.textg__text h2 {
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 800ms;
+}
+.textg__text p {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 800ms;
+}
+
+.ligne1 {
+  height: 240px;
+  transition: all 800ms;
+}
+.ligne1 .icon1 {
+  background-image: url("../images/roche5.jpeg");
+  background-size: cover;
+  height: 240px;
+  margin-bottom: -8px;
+  padding: 0 10%;
+  transition: all 800ms;
+}
+.ligne1 .icon1 img {
+  height: 100%;
+  padding: 20px;
+  transition: all 800ms;
+}
+.ligne1:hover {
+  height: 300px;
+}
+.ligne1:hover h2 {
+  color: white;
+  font-size: 50px;
+}
+.ligne1:hover p {
+  color: white;
+}
+.ligne1:hover .icon1 {
+  height: 300px;
+  padding: 0 5%;
+}
+.ligne1:hover .icon1 img {
+  padding: 50px;
+}
+
+.ligne2 {
+  height: 240px;
+  transition: all 800ms;
+}
+.ligne2 .icon2 {
+  background-image: url("../images/roche1.jpeg");
+  background-size: cover;
+  height: 240px;
+  margin-bottom: -8px;
+  padding: 0 5%;
+  transition: all 800ms;
+}
+.ligne2 .icon2 img {
+  height: 100%;
+  padding: 20px;
+  transition: all 800ms;
+}
+.ligne2:hover {
+  height: 280px;
+}
+.ligne2:hover h2 {
+  color: white;
+  font-size: 50px;
+}
+.ligne2:hover p {
+  color: white;
+}
+.ligne2:hover .icon2 {
+  padding: 0;
+  height: 280px;
+}
+.ligne2:hover .icon2 img {
+  padding: 40px;
+}
+
+.ligne3 {
+  height: 380px;
+}
+.ligne3 .icon3 {
+  background-image: url("../images/roche5.jpeg");
+  background-size: cover;
+  height: 380px;
+  margin-bottom: -8px;
+  padding: 0 3%;
+  transition: all 1200ms;
+}
+.ligne3 .icon3 img {
+  height: 100%;
+  padding: 90px 20px;
+}
+.ligne3:hover h2 {
+  color: white;
+  font-size: 50px;
+}
+.ligne3:hover p {
+  color: white;
+}
+.ligne3:hover .icon3 {
+  padding: 0;
+}
+
+.ligne4 {
+  height: 240px;
+  transition: all 800ms;
+}
+.ligne4 .icon4 {
+  background-image: url("../images/roche1.jpeg");
+  background-size: cover;
+  height: 240px;
+  margin-bottom: -8px;
+  padding: 0 8%;
+  transition: all 800ms;
+}
+.ligne4 .icon4 img {
+  height: 100%;
+  padding: 20px;
+  transition: all 800ms;
+}
+.ligne4:hover {
+  height: 280px;
+}
+.ligne4:hover h2 {
+  color: white;
+  font-size: 50px;
+}
+.ligne4:hover p {
+  color: white;
+}
+.ligne4:hover .icon4 {
+  padding: 0;
+  height: 280px;
+}
+.ligne4:hover .icon4 img {
+  padding: 40px;
+}
+
+section span {
+  display: block;
+  margin: 0 50px;
+  background-color: rgba(70, 62, 64, 0.5);
+  color: #FFD600;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+  width: 200px;
+  border-radius: 50px;
+  border: 3px solid #FFD600;
+  transform: scale(1);
+  transition: all 200ms;
+}
+section span:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 214, 0, 0.5);
+  color: white;
+}
+
+.textaccueil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textaccueil p {
+  max-width: 70%;
+  text-align: justify;
+}
+
+.devis {
+  margin-top: 120px;
+}
+
+.form div {
+  background-color: #463E40;
+  border-radius: 50px;
+  padding: 20px;
+  width: 760px;
+}
+
+.choix {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.choix__btn1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+}
+.choix__btn2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  padding: 10px;
+}
+
+.contact {
+  margin-top: 120px;
+}
+
+.carte {
+  display: flex;
+}
+.carte__qr {
+  height: 250px;
+}
+.carte__qr p {
+  font-size: 0.8rem;
+}
+.carte__qr a {
+  height: 150px;
+}
+.carte__qr a img {
+  max-height: 100%;
+}
+.carte__text h2 {
+  margin: 20px 0px 0px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

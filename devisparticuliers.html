@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang=fr>
+    <head>
+        <meta charset="utf-8" />
+        <title>Geotech Solutions</title>
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo de la société"/></a>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href=index.html>ACCUEIL</a></li>
+                    <li>LOI ELAN</li>
+                    <li>MISSIONS NF</li>
+                    <li><a href=devis.html>DEVIS</a></li>
+                    <li><a href=contact.html>CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="devis">
+            <h1>
+                Demande de devis Loi Elan
+            </h1>
+            <p>Pour répondre à votre demande, nous avons besoin de quelques informations.</p>
+            <form action="" method="get" class="form">
+                <h2>Contact</h2>
+                <div class="form">
+                    <label for="Nom">Nom et Prénom</label>
+                    <input type="text" name="nom" id="nom" required><br/>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Téléphone</label>
+                    <input type="tel" name="tel" id="tel" required>
+                </div>
+                <h2>Projet</h2>
+                <div class="form">
+                    <label for="rue">Rue</label>
+                    <input type="codep" name="codep" id="codep" required><br/>
+                    <label for="codep">Code postal</label>
+                    <input type="codep" name="codep" id="codep" required><br/>
+                    <label for="ville">Ville</label>
+                    <input type="ville" name="ville" id="ville" required>
+                </div>
+                <h2>Informations optionnelles</h2>
+                <p>Dans la mesure du possible, merci de fournir les informations ci-dessous</p>
+                <div class="form">
+                    <label for="nbparcelles">Nombre de parcelles</label>
+                    <input type="nbparcelles" name="nbparcelles" id="nbparcelles" required>
+                    <label for="parcelle">Numéro(s) de(s) parcelle(s)</label>
+                    <input type="parcelle" name="parcelle" id="parcelle" required>
+                    <label for="emprise">Emprise au sol de la construction</label>
+                    <input type="emprise" name="emprise" id="emprise" required><br/>
+                    <label for="pente">Pente du terrain</label>
+                    <input type="pente" name="pente" id="pente" required><br/>
+                    <label for="ssol">Projet incluant un sous-sol</label>
+                    <input type="ssol" name="ssol" id="ssol" required>    
+                </div>
+                <div class="form">
+                    <input type="submit" value="Envoyer">
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
