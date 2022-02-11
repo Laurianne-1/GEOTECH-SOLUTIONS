@@ -5,144 +5,116 @@
         <title>Geotech Solutions</title>
         <link rel="shortcut icon" type="image/ico" href="images/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <header class="header">
-            <div class="header__logo">
-                <a href=index.html>
-                    <img src="images/logo.png" alt="Logo de la société"/>
-                </a>
-            </div>
-            <nav class="header__menu">
+        <header>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo de la société"/>
+            </a>
+            <nav>
                 <ul>
                     <li><a href=index.html>ACCUEIL</a></li>
-                    <li><a href="#">LOI ELAN</a></li>
+                    <li><a href="loi_elan.html">LOI ELAN</a></li>
                     <li><a href="#">GEOTECHNIQUE</a></li>
                     <li><a href=devis.html>DEVIS</a></li>
                     <li><a href=contact.html>CONTACT</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="banniere">
-            <div class="banniere__mission">GEOTECH SOLUTIONS</br>Ingénierie géotechnique, études de sol Loi Élan</div>
-            <div class="banniere__slogan">
-                La solution à votre étude de sol
-            </div>
-            <div class="banniere__CTA">
-                <a href="devisparticuliers.html">
-                    <p class="button">DEVIS LOI ELAN</p>
-                </a>
-            </div>
-        </div>
-        <section>
+        
+        <section class="banniere">
+            <p>GEOTECH SOLUTIONS</p>
+            <p>Ingénierie géotechnique, études de sol Loi Élan</p>
+            <p>La solution à votre étude de sol</p>
+            <a href="devisparticuliers.html">
+                <button>DEVIS LOI ELAN</button>
+            </a>
+        </section>
+
+        <section class="presentation">
             <h1>Qui sommes-nous?</h1>
-            <div class='trait'></hr></div>
-            <div class="textd ligne1">
-                <div class="icon1">
-                    <img src="images/sondage.png" alt="icone sondage" class="icon">
+            <p>GEOTECH SOLUTIONS est un bureau d’études géotechniques basé en Ardèche qui vous accompagne tout au long de vos projets.</p>
+            <div class="cards">
+                <div>
+                    <img src="images/roche1.jpeg">
+                    <p>Entreprise à taille humaine, jeune et dynamique, GEOTECH SOLUTIONS est à l’écoute de vos demandes. Nous vous conseillons et réalisons vos études de sol assurant la pérennité de votre ouvrage</p>
+                    <p>CONSEILS</p>
+                    <img src="images/conseil.png">
                 </div>
-                <div class="textd__text">
-                    <h2>Ingénierie géotechnique</h2>
-                    <p>
-                        GEOTECH SOLUTIONS est un bureau d’études en ingénierie géotechnique basé en Ardèche qui vous accompagne tout au long de vos projets.
-                    </p>
-                </div>
-            </div>
 
-            <div class="textg ligne2">
-                <div class="icon2">
-                    <img src="images/equipe.png" alt="icone équipe"/>
+                <div>
+                    <img src="images/roche2.jpeg">
+                    <p>Nous effectuons les sondages (pénétrométriques, pressiométriques, géologiques, etc.), les essais de laboratoire (granulométrie, Valeur au bleu, etc.), et dimensionnons vos ouvrages géotechniques dans le respect de la norme NFP 94-500. </p>
+                    <p>INGENIERIE GEOTECHNIQUE</p>
+                    <img src="images/sondage.png">
                 </div>
-                <div class="textg__text">
-                    <h2>Entreprise à taille humaine</h2>
-                    <p>
-                        GEOTECH SOLUTIONS est une entreprise à taille humaine, à l’écoute de vos demandes.
-                    </p>
-                </div>
-            </div>
 
-            <div class="textd ligne3">
-                <div class="icon3">
-                    <img src="images/conseil.png" alt="icone ingénieur conseil"/>
+                <div>
+                    <img src="images/roche3.jpeg">
+                    <p>Nous réalisons également les dimensionnement des filières d’assainissement non autonome (ANC) et les études d’hydrogéologie.</p>
+                    <img src="images/assainissement.png">
+                    <p>ASSAINISSEMENT ET HYDROGEOLOGIE</p>
                 </div>
-                <div class="textd__text">
-                    <h2>Conseils</h2>
-                    <p>Toute construction ou aménagement nécessite d’étudier son adaptation au sol et à l’environnement qui l’entoure afin d’assurer sa pérennité.<br>GEOTECH SOLUTIONS vous conseille et réalise vos études de sol depuis les sondages de sols et les essais de laboratoire jusqu’à la conception et au calcul des ouvrages géotechniques dans le respect de la norme NFP 94-500.
-                    </p>
-                </div>
-            </div>
 
-            <div class="textg ligne4">
-                <div class="icon4">
-                    <img src="images/rapport.png" alt="icone rapport"/>
-                </div>
-                <div class="textg__text">
-                    <h2>Fin de mission</h2>
-                    <p>
-                        Nous établissons pour chaque mission un rapport géotechnique complet respectant l’ensemble des contraintes d’aménagement.
-                    </p>
+                <div>
+                    <img class="bg" src="images/roche4.jpeg">
+                    <p>Pour chaque mission, votre interlocuteur dédié établira un rapport géotechnique personnalisé et complet.</p>
+                    <p>RAPPORT COMPLET</p>
+                    <img src="images/rapport.png">
                 </div>
             </div>
         </section>
-
-        <section>
-            <h1>Études de sol Loi Élan</h1>
-            <div class='trait'></hr></div>
-            <div class="textaccueil">
-                <p>Vous vendez un terrain ? Vous voulez construire votre maison individuelle ?<br>Pour tout savoir sur l’application de la Loi Élan :</p>
-                <p><span>C’est par ici !</span></p>
+            
+        <section class="details">
+            <div>
+                <h1>Études de sol Loi Élan</h1>
+                <p>Vous vendez un terrain?<br>Vous voulez construire votre maison individuelle?<br>GEOTECH SOLUTIONS réalise votre étude géotechnique (G1 PGC ou G2) avec fiabilité, réactivité et optimisation des coûts.<br>Pour tout savoir sur l’application de la <strong>Loi Élan</strong>:</p>
+                <a href="loi_elan.html"><button>Cliquez ici</button></a>
             </div>
-        </section>
 
-        <section>
-            <h1>Missions géotechniques</h1>
-            <div class='trait'></hr></div>
-            <div class="textaccueil">
-                <p>GEOTECH SOLUTIONS possède les compétences pour intervenir à tous les stades de la vie d’un ouvrage. Les différentes missions dans lesquelles GEOTECH SOLUTIONS intervient, entrent dans le cadre des missions types d’ingénierie géotechnique G1 à G5 telles que définies par la norme NFP 94-500 de novembre 2013.</p>
-                <p><span>Cliquez ici</span></p>
+            <div>
+                <h1>Missions géotechniques</h1>
+                <p>GEOTECH SOLUTIONS possède les compétences pour intervenir à tous les stades de la vie d’un ouvrage : <strong>Etudes préalables, conception, réalisation, suivi ou diagnostic</strong>. Pour les découvrir:</p>
+                <button>Cliquez ici</button>
             </div>
-        </section>
 
-        <section>
-            <h1>Demandez un devis</h1>
-            <div class='trait'></hr></div>
-            <div class="textaccueil">
-                <p>Vous avez besoin d’un devis ou de conseils.</p>
-                <p><span>Contactez-nous </span></p>
+            <div>
+                <h1>Demandez un devis</h1>
+                <p>Vous avez besoin d’un devis ou de conseils:</p>
+                <button>Contactez-nous</button>
             </div>
+            
         </section>
+        </span>
 
         <footer>
-            <div class="partenaires">
+            <div>
                 <h3>Partenaires</h3>
-                <div class="partenaires__logos">
-                    <img src="images/ent.png">
-                    <img src="images/ent.png">
-                    <img src="images/ent.png">
-                    <img src="images/ent.png">
-                    <img src="images/ent.png">
-                    <img src="images/ent.png">
-                </div>
+                <img src="images/ent.png">
+                <img src="images/ent.png">
+                <img src="images/ent.png">
+                <img src="images/ent.png">
+                <img src="images/ent.png">
+                <img src="images/ent.png">
             </div>
-            <div class="reseaux">
+            <div>
                 <h3>Suivez-nous sur les réseaux</h3>
-                <div class="reseaux__logos">
-                    <img src="images/linkedin.png">
-                    <img src="images/facebook.png">
-                    <img src="images/instagram.png">
-                    <img src="images/twitter.png">
-                </div>
+                <img src="images/linkedin.png">
+                <img src="images/facebook.png">
+                <img src="images/instagram.png">
+                <img src="images/twitter.png">
             </div>
-            <div class="contactez">
+            <div>
                 <h3>Contactez-nous</h3>
-                <div class="contactez__text">
-                    <p>GEOTECHNIQUE SOLUTIONS<br>
-                        366 Chemin de Martinet<br>
-                        07170 Lussas<br>
-                        06.79.93.41.93<br>
-                        contact@geotechsolutions.fr<br></p>
-                </div>
+                <p>GEOTECHNIQUE SOLUTIONS<br>
+                    366 Chemin de Martinet<br>
+                    07170 Lussas<br>
+                    06.79.93.41.93<br>
+                    contact@geotechsolutions.fr<br></p>
             </div>
         </footer>
 
