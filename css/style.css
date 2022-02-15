@@ -91,6 +91,7 @@ h3 {
 a {
   color: #fff;
   text-decoration: underline;
+  text-underline-offset: 6px;
   text-decoration-color: #FFD600;
 }
 
